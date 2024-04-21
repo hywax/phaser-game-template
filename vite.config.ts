@@ -35,7 +35,7 @@ export default defineConfig({
       cleanOnRerun: true,
       clean: true,
       all: true,
-      provider: 'v8'
+      provider: 'v8',
     },
   },
 })
