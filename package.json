@@ -1,0 +1,44 @@
+{
+  "name": "green-valley",
+  "description": "",
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hywax/green-valley.git"
+  },
+  "author": {
+    "name": "hywax",
+    "email": "me@hywax.space",
+    "url": "https://hywax.space/"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "release": "pnpm lint && pnpm test && pnpm build && changelogen --release --push",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest --run --coverage",
+    "test:watch": "vitest",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.15.0",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@vitest/coverage-v8": "^1.5.0",
+    "changelogen": "^0.5.5",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vitest": "^1.5.0"
+  },
+  "lint-staged": {
+    "*.ts": "pnpm run lint"
+  }
+}
