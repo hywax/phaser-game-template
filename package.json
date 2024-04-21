@@ -1,16 +1,16 @@
 {
   "name": "green-valley",
-  "description": "",
-  "version": "0.0.0",
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hywax/green-valley.git"
-  },
+  "version": "0.0.0",
+  "description": "",
   "author": {
     "name": "hywax",
     "email": "me@hywax.space",
     "url": "https://hywax.space/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hywax/green-valley.git"
   },
   "scripts": {
     "dev": "vite",
@@ -29,6 +29,7 @@
     "@antfu/eslint-config": "^2.15.0",
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.12.7",
     "@vitest/coverage-v8": "^1.5.0",
     "changelogen": "^0.5.5",
     "eslint": "^9.0.0",
