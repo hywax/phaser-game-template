@@ -1,0 +1,37 @@
+name: Welcome
+
+on:
+  pull_request_target:
+    types: [opened, closed]
+  issues:
+    types: [opened]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+        uses: wow-actions/welcome@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          FIRST_ISSUE: |
+            👋 @{{ author }}
+            Thanks for opening your first issue here!
+            To help make it easier for us to investigate your issue, please follow the [contributing guidelines](https://github.com/hywax/green-valley/blob/main/.github/CONTRIBUTING.md).
+
+          FIRST_PR: |
+            👋 @{{ author }}
+
+            💖 Thanks for opening this pull request!
+
+            Please follow the [contributing guidelines](https://github.com/hywax/green-valley/blob/main/.github/CONTRIBUTING.md). And we use [semantic commit messages](https://www.conventionalcommits.org/en/v1.0.0/) to streamline the release process.
+
+            Examples of commit messages with semantic prefixes:
+            - `fix: interval for sending a request in the base service`
+            - `feat: add new NAME service`
+            - `docs: example of using the NAME service`
+
+          FIRST_PR_MERGED: |
+            👋 @{{ author }} Congrats on merging your first pull request! 🎉
+
+          STAR_MESSAGE: If you like this project, please ⭐ star our repo.
