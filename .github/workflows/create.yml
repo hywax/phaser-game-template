@@ -1,6 +1,7 @@
 name: Create Template
 
 on:
+  workflow_dispatch:
   create:
 
 jobs:
