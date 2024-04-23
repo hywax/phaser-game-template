@@ -25,7 +25,7 @@ This is a template repo. Click the green [Use this template](https://github.com/
 
 ```shell
 git clone https://github.com/hywax/phaser-game-template.git
-cd github-action-template
+cd phaser-game-template
 pnpm install
 ```
 
