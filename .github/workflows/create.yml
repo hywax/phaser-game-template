@@ -12,10 +12,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Apply settings.yml
-        uses: spenserblack/actions-settings@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # todo fix step, now there is an error when creating a repository
+      # - name: Apply settings.yml
+      #   uses: spenserblack/actions-settings@v1
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     path: './.github/settings.yml'
 
       - name: Update package.json
         env:
