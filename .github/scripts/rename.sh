@@ -25,6 +25,5 @@ sedi () {
   sed --version >/dev/null 2>&1 && sed -i -- "$@" || sed -i "" "$@"
 }
 
-sedi "s|hywax/phaser-game-template|"${GITHUB_REPOSITORY}"|;" ".github/workflows/welcome.yml"
 sedi "s|hywax/phaser-game-template|"${GITHUB_REPOSITORY}"|;" "README.md"
 sedi "s|hywax|"${GITHUB_REPOSITORY_OWNER}"|;" "LICENSE.md"
