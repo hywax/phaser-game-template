@@ -12,6 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Apply settings.yml
+        uses: spenserblack/actions-settings@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Update package.json
         env:
           GITHUB_REPOSITORY_DESCRIPTION: ${{ github.event.repository.description }}
@@ -31,8 +36,3 @@ jobs:
           commit_options: '--amend'
           push_options: '--force'
           skip_fetch: true
-
-      - name: Apply settings.yml
-        uses: spenserblack/actions-settings@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
