@@ -11,6 +11,9 @@ importers:
       phaser:
         specifier: ^3.80.1
         version: 3.80.1
+      phaser-font-plugin:
+        specifier: ^0.1.1
+        version: 0.1.1(phaser@3.80.1)
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.15.0
@@ -1943,6 +1946,11 @@ packages:
 
   perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
+
+  phaser-font-plugin@0.1.1:
+    resolution: {integrity: sha512-ijBfuxyooIU9uMSbQ8Hko0viBr+y3ToW0jskfYphkuP9tYhlcbZ1V4TVteadDQ4vjdykkH+ME4kxgzeLURfYGg==}
+    peerDependencies:
+      phaser: ^3.80.1
 
   phaser@3.80.1:
     resolution: {integrity: sha512-VQGAWoDOkEpAWYkI+PUADv5Ql+SM0xpLuAMBJHz9tBcOLqjJ2wd8bUhxJgOqclQlLTg97NmMd9MhS75w16x1Cw==}
@@ -4462,6 +4470,10 @@ snapshots:
   pathval@1.1.1: {}
 
   perfect-debounce@1.0.0: {}
+
+  phaser-font-plugin@0.1.1(phaser@3.80.1):
+    dependencies:
+      phaser: 3.80.1
 
   phaser@3.80.1:
     dependencies:
