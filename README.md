@@ -1,6 +1,19 @@
-# Phaser Game Template
+<h1 align="center">Phaser Game Template</h1>
+<p align="center">
+<i>Phaser Game Template is a template for creating Phaser games with TypeScript.</i>
+<br/><br/>
+  <img width="413" alt="Phaser Game Template" src="https://raw.githubusercontent.com/hywax/phaser-game-template/main/public/assets/img/logo.png"/>
+</p>
 
-Use this template to bootstrap the creation of a Phaser Game.
+<details>
+  <summary><b>Table of Contents</b></summary>
+
+  * [Features](#features)
+  * [Get started](#get-started)
+  * [Usage](#usage)
+  * [Used by](#used-by)
+  * [License](#license)
+</details>
 
 ## Features
 
