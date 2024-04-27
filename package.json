@@ -20,7 +20,7 @@
     "lint:fix": "eslint . --fix",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "phaser": "^3.80.1",
